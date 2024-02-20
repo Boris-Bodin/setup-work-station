@@ -1,4 +1,5 @@
 #!/bin/bash
+[ $(id -u) != "0" ] && exec sudo "$0" "$@"
 
 echo "Load utils files !"
 source ./scripts/utils.sh

@@ -8,11 +8,17 @@ Supported OS :
 
 Features :
 
-- Update the system
+- Install divers software
+  - git
+  - curl
+  - docker
+  - docker-compose
+  - google-chrome
+  - jetbrains-toolbox
 - Create dev/project repertories
-- Install docker and docker-compose
-- Modify PS1
-- Add Alias
+- Configure Bash
+  - Modify PS1
+  - Add Alias
 
 ## Installation
 

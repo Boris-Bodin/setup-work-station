@@ -24,13 +24,13 @@ function printColor() {
 }
 
 function silentExecute() {
-    "$@" &>/dev/null
+    "$@" &> /dev/null
 }
 
 function printSilentExecute() {
     printColor "$GREEN" "$1... "
-    "${@:2}" &>/dev/null
-    printlnColor "$GREEN" "Finish !"
+    silentExecute "${@:2}"
+    printlnColor "$GREEN" "Done !"
 }
 
 export -f print
