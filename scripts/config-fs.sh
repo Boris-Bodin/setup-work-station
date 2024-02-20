@@ -22,6 +22,7 @@ printColor "$GREEN" "Check if ssh key exist... "
 if [ ! -f "$USER_HOME"/.ssh/id_rsa ]; then
     printlnColor "$GREEN" "Create ssh key"
     ssh-keygen -q -f "$USER_HOME"/.ssh/id_rsa -P ""
+    chown "$SUDO_USER:$SUDO_USER" "$USER_HOME"/.ssh/id_rsa*
 else
     printlnColor "$GREEN" "OK !"
 fi
