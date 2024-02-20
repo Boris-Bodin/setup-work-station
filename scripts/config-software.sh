@@ -10,7 +10,6 @@ printSilentExecute "Install git" apt-get install -y git
 printSilentExecute "Install docker and docker-compose" apt-get install -y docker docker-compose
 
 function installJetBrainsToolbox() {
-
     DIR="/opt/jetbrains-toolbox"
     if [ ! -d ${DIR} ]; then
 
