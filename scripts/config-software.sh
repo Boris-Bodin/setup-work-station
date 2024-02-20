@@ -59,3 +59,5 @@ printSilentExecute "Install chrome" installChrome
 google-chrome
 
 printSilentExecute "Install guake" apt-get install -y guake
+
+printSilentExecute "Set favorite bar" gsettings set org.gnome.shell favorite-apps "['org.gnome.Nautilus.desktop', 'google-chrome.desktop', 'jetbrains-toolbox.desktop']"
