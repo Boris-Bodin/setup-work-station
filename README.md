@@ -2,6 +2,18 @@
 
 Various items for set up a new work station.
 
+Supported OS :
+
+- Ubuntu 20.04.3 LTS
+
+Features :
+
+- Update the system
+- Create dev/project repertories
+- Install docker and docker-compose
+- Modify PS1
+- Add Alias
+
 ## Installation
 
 Just clone this repo :
@@ -13,12 +25,7 @@ git clone https://gitlab.com/boris.bodin/setup-work-station.git
 
 ## Usage
 
-For set up a new work station :
-
-- create dev/project repertories
-- install docker and docker-compose
-
-Enter the followed command :
+For set up a new work station, enter the followed command :
 
 ```
 cd ~/setup-work-station
