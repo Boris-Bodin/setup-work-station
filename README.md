@@ -15,9 +15,12 @@ Features :
   - docker-compose
   - google-chrome
   - jetbrains-toolbox
+  - guake
 - Config file system
   - Create repertories dev/project 
   - Create ssh key
+  - Updata guake settings
+  - Set favorite apps on gnome
 - Create dev/project repertories
 - Configure Bash
   - Modify PS1
@@ -44,9 +47,10 @@ For set up a new work station, enter the followed command :
 cd ~/setup-work-station
 ./setup-fresh-station.sh
 ```
+## Tips
 
-## Roadmap
+For export the guake_prefs file :
 
-- auto-start for Jetbrains Toolbox
-- google-chrome in app bookmark
-- add guake
+```
+ guake --save-preferences guake_prefs
+```

@@ -33,3 +33,8 @@ if [ ! -f "$USER_HOME"/.ssh/id_rsa ]; then
 else
     printlnColor "$GREEN" "OK !"
 fi
+
+printSilentExecute "Update guake settings" guake --restore-preferences ./resources/guake_prefs
+
+printSilentExecute "Set favorite apps on gnome" gsettings set org.gnome.shell favorite-apps "['org.gnome.Nautilus.desktop', 'google-chrome.desktop', 'jetbrains-toolbox.desktop']"
+
