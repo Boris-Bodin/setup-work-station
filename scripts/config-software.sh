@@ -41,13 +41,20 @@ function installJetBrainsToolbox() {
     fi
 }
 printSilentExecute "Install jetbrains-toolbox" installJetBrainsToolbox
+jetbrains-toolbox
 
 function installChrome() {
     if [ ! command -v google-chrome ]; then
-        wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-        apt-get install -y "$USER_HOME"/google-chrome-stable_current_amd64.deb
-        rm "$USER_HOME"/google-chrome-stable_current_amd64.deb
+        URL="https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb"
+        FILE=$(basename "${URL}")
+        DEST=$USER_HOME/$FILE
+
+        if [ ! -f "${DEST}" ]; then
+            wget -cO  "${DEST}" "${URL}" --read-timeout=5 --tries=0
+        fi
+        apt-get install -y "${DEST}"
+        rm "${DEST}"
     fi
 }
 printSilentExecute "Install chrome" installChrome
-
+google-chrome
