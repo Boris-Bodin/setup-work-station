@@ -57,3 +57,5 @@ function installChrome() {
 }
 printSilentExecute "Install chrome" installChrome
 google-chrome
+
+printSilentExecute "Install guake" apt-get install -y guake
