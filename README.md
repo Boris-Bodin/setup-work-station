@@ -15,6 +15,9 @@ Features :
   - docker-compose
   - google-chrome
   - jetbrains-toolbox
+- Config file system
+  - Create repertories dev/project 
+  - Create ssh key
 - Create dev/project repertories
 - Configure Bash
   - Modify PS1
