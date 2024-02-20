@@ -38,3 +38,14 @@ printSilentExecute "Update guake settings" guake --restore-preferences ./resourc
 
 printSilentExecute "Set favorite apps on gnome" gsettings set org.gnome.shell favorite-apps "['org.gnome.Nautilus.desktop', 'google-chrome.desktop', 'jetbrains-toolbox.desktop']"
 
+function updateSwapFileSize() {
+    if [ -f /swapfile ]; then
+        swapoff /swapfile
+        rm /swapfile
+        fallocate -l 8G /swapfile
+        chmod 600 /swapfile
+        mkswap /swapfile
+        swapon /swapfile
+    fi
+}
+printSilentExecute "Set size of swap file to 8Go, if swaf file exist" updateSwapFileSize

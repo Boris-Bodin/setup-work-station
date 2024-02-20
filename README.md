@@ -9,22 +9,23 @@ Supported OS :
 Features :
 
 - Install divers software
-  - git
-  - curl
-  - docker
-  - docker-compose
-  - google-chrome
-  - jetbrains-toolbox
-  - guake
+    - git
+    - curl
+    - docker
+    - docker-compose
+    - google-chrome
+    - jetbrains-toolbox
+    - guake
 - Config file system
-  - Create repertories dev/project 
-  - Create ssh key
-  - Updata guake settings
-  - Set favorite apps on gnome
+    - Create repertories dev/project
+    - Create ssh key
+    - Updata guake settings
+    - Set favorite apps on gnome
+    - Update swap file size to 8Go
 - Create dev/project repertories
 - Configure Bash
-  - Modify PS1
-  - Add Alias
+    - Modify PS1
+    - Add Alias
 
 ## Installation
 
@@ -38,7 +39,6 @@ git clone https://gitlab.com/boris.bodin/setup-work-station.git
 
 or download the source and extract it to ~.
 
-
 ## Usage
 
 For set up a new work station, enter the followed command :
@@ -47,6 +47,7 @@ For set up a new work station, enter the followed command :
 cd ~/setup-work-station
 ./setup-fresh-station.sh
 ```
+
 ## Tips
 
 For export the guake_prefs file :
