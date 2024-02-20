@@ -24,7 +24,7 @@ sudo apt-get install git
 git clone https://gitlab.com/boris.bodin/setup-work-station.git
 ```
 
-or download the source.
+or download the source and extrate it to ~.
 
 
 ## Usage
