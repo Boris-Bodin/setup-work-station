@@ -20,8 +20,12 @@ Just clone this repo :
 
 ```
 cd ~
+sudo apt-get install git
 git clone https://gitlab.com/boris.bodin/setup-work-station.git
 ```
+
+or download the source.
+
 
 ## Usage
 
