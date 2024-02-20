@@ -30,7 +30,7 @@ sudo apt-get install git
 git clone https://gitlab.com/boris.bodin/setup-work-station.git
 ```
 
-or download the source and extrate it to ~.
+or download the source and extract it to ~.
 
 
 ## Usage
@@ -44,4 +44,5 @@ cd ~/setup-work-station
 
 ## Roadmap
 
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+- auto-start for Jetbrains Toolbox
+- google-chrome in app bookmark
