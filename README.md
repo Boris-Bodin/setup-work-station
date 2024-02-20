@@ -49,3 +49,4 @@ cd ~/setup-work-station
 
 - auto-start for Jetbrains Toolbox
 - google-chrome in app bookmark
+- add guake
