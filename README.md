@@ -5,6 +5,7 @@ Various items for set up a new work station.
 Supported OS :
 
 - Ubuntu 20.04.3 LTS
+- Ubuntu 22.04.4 LTS
 
 Features :
 
@@ -46,6 +47,7 @@ For set up a new work station, enter the followed command :
 ```
 cd ~/setup-work-station
 ./setup-fresh-station.sh
+guake --restore-preferences ./resources/guake_prefs
 ```
 
 ## Tips
@@ -55,3 +57,4 @@ For export the guake_prefs file :
 ```
  guake --save-preferences guake_prefs
 ```
+

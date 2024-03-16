@@ -8,6 +8,8 @@ printSilentExecute "Upgrade system" apt-get upgrade -y
 printSilentExecute "Install curl" apt-get install -y curl
 printSilentExecute "Install git" apt-get install -y git
 printSilentExecute "Install docker and docker-compose" apt-get install -y docker docker-compose
+printSilentExecute "Install various lib" apt-get install -y libfuse2
+
 
 function installJetBrainsToolbox() {
     DIR="/opt/jetbrains-toolbox"
