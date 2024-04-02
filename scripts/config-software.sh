@@ -5,6 +5,7 @@ printlnColor "$BLUE" "Launch software configuration"
 printSilentExecute "Update system" apt-get update
 printSilentExecute "Upgrade system" apt-get upgrade -y
 
+printSilentExecute "Install gparted" apt-get install -y gparted
 printSilentExecute "Install curl" apt-get install -y curl
 printSilentExecute "Install git" apt-get install -y git
 printSilentExecute "Install docker and docker-compose" apt-get install -y docker docker-compose
