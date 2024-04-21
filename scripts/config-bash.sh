@@ -7,7 +7,8 @@ function setPS1() {
 }
 
 function setAlias() {
-    echo "alias connect_headset=\"echo \\\"connect 88:C9:E8:C9:C1:7A\\\" | bluetoothctl\"" | cat > ~/.bash_aliases
+    echo "alias connect-headset=\"echo \\\"connect 88:C9:E8:C9:C1:7A\\\" | bluetoothctl\"" | cat > ~/.bash_aliases
+    echo "alias cg-local=\"java -jar /usr/local/bin/cg-local\"" | cat >> ~/.bash_aliases
     printlnColor "$GREEN" "TODO"
 }
 

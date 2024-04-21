@@ -8,8 +8,11 @@ printSilentExecute "Upgrade system" apt-get upgrade -y
 printSilentExecute "Install gparted" apt-get install -y gparted
 printSilentExecute "Install curl" apt-get install -y curl
 printSilentExecute "Install git" apt-get install -y git
+printSilentExecute "Install java" apt-get install -y default-jre
 printSilentExecute "Install docker and docker-compose" apt-get install -y docker docker-compose
 printSilentExecute "Install various lib" apt-get install -y libfuse2
+
+printSilentExecute "Add user in docker group" sudo usermod -aG docker $USER
 
 
 function installJetBrainsToolbox() {
@@ -44,6 +47,7 @@ function installJetBrainsToolbox() {
         jetbrains-toolbox
     fi
 }
+
 printSilentExecute "Install jetbrains-toolbox" installJetBrainsToolbox
 
 function installChrome() {
@@ -64,3 +68,5 @@ function installChrome() {
 printSilentExecute "Install chrome" installChrome
 
 printSilentExecute "Install guake" apt-get install -y guake
+
+printSilentExecute "Install cg-local" cp "${USER_HOME}/setup-work-station/resources/cg-local-app-1.3.0.jar" /usr/local/bin/cg-local
